@@ -1,13 +1,9 @@
-import { View, Text, Button, StyleSheet } from "react-native";
-import { useRouter } from "expo-router";
+import { View, Text, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
-  const router = useRouter();
-
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>🏡 Welcome to the Home Screen!</Text>
-      <Button title="Go to Explore" onPress={() => router.push("/explore")} />
+      <Text style={styles.text}>🏡 Home Screen</Text>
     </View>
   );
 }

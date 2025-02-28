@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 export default function ExploreScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>🔍 Welcome to the Explore Screen!</Text>
+      <Text style={styles.text}>🔍 Explore Screen</Text>
     </View>
   );
 }
@@ -20,4 +20,3 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 });
-
