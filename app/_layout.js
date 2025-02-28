@@ -7,7 +7,7 @@ export default function Layout() {
       screenOptions={{
         tabBarActiveTintColor: "purple", // Active tab color
         tabBarInactiveTintColor: "gray", // Inactive tab color
-        tabBarStyle: { backgroundColor: "#fff" }, // Tab bar background
+        tabBarStyle: { backgroundColor: "#fff" }, // Background color
       }}
     >
       {/* ✅ Home Screen */}
@@ -43,7 +43,7 @@ export default function Layout() {
         }}
       />
 
-      {/* ✅ Swipe Screen */}
+      {/* ✅ Swipe Screen (NEW) */}
       <Tabs.Screen
         name="swipe"
         options={{
