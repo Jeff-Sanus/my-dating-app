@@ -1,3 +1,4 @@
+import { StyleSheet } from 'react-native';
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Image } from "react-native"; // ✅ FIX: Import StyleSheet
 import Swiper from "react-native-deck-swiper";

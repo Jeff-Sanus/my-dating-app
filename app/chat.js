@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiftedChat } from "react-native-gifted-chat";
 
-export default function ChatScreen() { // ✅ FIX: Add default export
+export default function ChatScreen() {
   const [messages, setMessages] = useState([]);
 
   const onSend = (newMessages = []) => {

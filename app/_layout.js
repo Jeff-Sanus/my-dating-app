@@ -1,66 +1,42 @@
-import { Tabs } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function Layout() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: "purple", // Active tab color
-        tabBarInactiveTintColor: "gray", // Inactive tab color
-        tabBarStyle: { backgroundColor: "#fff" }, // Background color
-      }}
-    >
-      {/* ✅ Home Screen */}
+    <Tabs>
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: 'Home',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" size={size} color={color} />
           ),
         }}
       />
-
-      {/* ✅ Explore Screen */}
       <Tabs.Screen
         name="explore"
         options={{
-          title: "Explore",
+          title: 'Explore',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="search" size={size} color={color} />
+            <Ionicons name="compass" size={size} color={color} />
           ),
         }}
       />
-
-      {/* ✅ Profile Screen */}
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: "Profile",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person" size={size} color={color} />
-          ),
-        }}
-      />
-
-      {/* ✅ Swipe Screen (NEW) */}
       <Tabs.Screen
         name="swipe"
         options={{
-          title: "Swipe",
+          title: 'Swipe',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="heart" size={size} color={color} />
           ),
         }}
       />
-
-      {/* ✅ Chat Screen */}
       <Tabs.Screen
-        name="chat"
+        name="profile"
         options={{
-          title: "Chat",
+          title: 'Profile',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="chatbubble" size={size} color={color} />
+            <Ionicons name="person" size={size} color={color} />
           ),
         }}
       />
