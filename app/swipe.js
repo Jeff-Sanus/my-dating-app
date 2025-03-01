@@ -1,6 +1,5 @@
-import { StyleSheet } from 'react-native';
 import React, { useState } from "react";
-import { View, Text, StyleSheet, Image } from "react-native"; // ✅ FIX: Import StyleSheet
+import { View, Text, StyleSheet, Image } from "react-native"; 
 import Swiper from "react-native-deck-swiper";
 
 const users = [
@@ -34,7 +33,7 @@ export default function SwipeScreen() {
   );
 }
 
-const styles = StyleSheet.create({ // ✅ FIX: StyleSheet is now defined
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
