@@ -1,22 +1,3 @@
-import React, { useState } from "react";
-import { GiftedChat } from "react-native-gifted-chat";
-
-export default function ChatScreen() {
-  const [messages, setMessages] = useState([]);
-
-  const onSend = (newMessages = []) => {
-    setMessages((previousMessages) => GiftedChat.append(previousMessages, newMessages));
-  };
-
-  return (
-    <GiftedChat
-      messages={messages}
-      onSend={(messages) => onSend(messages)}
-      user={{ _id: 1, name: "You" }}
-    />
-  );
-}
-
 import { useState, useEffect } from "react";
 import io from "socket.io-client";
 
