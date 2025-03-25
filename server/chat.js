@@ -1,4 +1,18 @@
-import { useState, useEffect } from "react";
+module.exports = (io) => {
+  io.on("connection", (socket) => {
+    console.log("A user connected: ", socket.id);
+
+    socket.on("send_message", (data) => {
+      io.emit("receive_message", data);
+    });
+
+    socket.on("disconnect", () => {
+      console.log("A user disconnected: ", socket.id);
+    });
+  });
+};
+
+
 import io from "socket.io-client";
 
 const socket = io("http://localhost:4000"); // Connect to the backend server
